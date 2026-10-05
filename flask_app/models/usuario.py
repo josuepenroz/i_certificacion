@@ -6,4 +6,7 @@ class Usuario:
         self.nombre  = date.get("nombre")
         self.apellido  = date.get("apellido")
         self.email  = date.get("email ")
-        self.password  = date.get("password")
+        self.password  = date.get("password")   
+        self.updated_at  = date.get("updated_at")   
+        self.created_at  = date.get("created_at")   
+        
