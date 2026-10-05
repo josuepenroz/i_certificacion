@@ -5,3 +5,6 @@ from flask_app.models.usuario import Usuario
 @app.route("/")
 def inicio():
     return render_template("index.html")
+
+@app.route("/crear/usuario")
+def     
