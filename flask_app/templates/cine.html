@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ver</title>
+    <title></title>
 </head>
 <body>
     <h1>Informacion</h1>
     {% for usuario in usuarios %}
-        
-        <p>Bienvenido:{{usuario.nombre}}</p>
-
+        <p>ID {{usuario.id}}</p>
+        <p>Nombre: {{usuario.nombre}}</p>
+    
     {% endfor %}    
     <a href="{{ url_for('inicio') }}">Volver</a>
 </body>
