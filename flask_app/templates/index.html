@@ -7,28 +7,50 @@
 </head>
 <body>
     <h2>Registro</h2>
-    <form action="" method="post">
+    <form action="{{ url_for('crear_usuarios') }}" method="post">
         <div>
             <label for="nombre">Nombre</label>
-        <input type="text" name="apellido" id="apellido">
+            <input type="text" name="nombre" id="nombre">
         </div>
         <div>
-                <label for="apellido">Apellido</label>
-        <input type="text" name="email" id="email">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
         </div>
-       <div>
-        <label for="email">email</label>
-        <input type="text" name="email" id="email">
-       </div>
-          <div>
-            <label for="password">password</label>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
             <input type="password" name="password" id="password">
-          </div>
-          <div>
-            <label for="password">password</label>
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
             <input type="password" name="password" id="password">
-          </div>
-          <button>Registro</button>
+        </div>
+        <button type="submit">Registro</button>
     </form>
+    <div>
+        <div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com">
+
+                </div>
+                <div class="campo">
+                    <div class="t-contrasena">
+                        <label for="password">Contraseña </label>
+                      
+                    </div>
+                    <div class="campo-password">
+                        <input type="password" name="password" id="password" placeholder="************">
+                      
+                    </div>
+                </div>
+
+                
+                <button type="submit">Iniciar Sesión</button>
+            </div>
+    </div>
 </body>
 </html>
